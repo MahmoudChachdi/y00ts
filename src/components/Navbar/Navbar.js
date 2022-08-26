@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet, Link } from "react-router-dom";
 
 import LOGO from './LOGO.png';
-import Tilt from 'react-tilt';
+
 import './Navbar.css';
  
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
 <nav className=" font background dt w-100 border-box  ph5-ns shadow-3">
   <div  style={{paddingTop: '0px'}} className='ma2 mt2  ph3 '>
          <Link to="/" > 
-          <Tilt className="Tilt r2 shadow-2 " options={{ max : 55 }} style={{ height: 50, width: 50 }} >
+          <div className="Tilt r2 shadow-2 " options={{ max : 55 }} style={{ height: 50, width: 50 }} >
               <div className="Tilt-inner pa1" > 
                 <img
                               src={LOGO}
@@ -19,7 +19,7 @@ const Navbar = () => {
                               
                               alt='logo'/> 
               </div>
-            </Tilt>
+            </div>
             </Link>
           
   </div>
