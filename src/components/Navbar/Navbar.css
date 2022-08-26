@@ -1,0 +1,50 @@
+
+.br4 {        border-radius: 1rem;
+color: black; }
+
+.left-100 {
+  left: 100%;
+}
+.font{
+	font-family: "Counpmrier New", Courier, monospace;
+}
+.background{
+	background-color: transparent;
+}
+button {
+  /* Variables */
+ --button_radius: 15px;
+ --button_color: transparent;
+ --button_outline_color: #e8e8e8;
+ font-size: 17px;
+ font-weight: bold;
+ border: none;
+ border-radius: var(--button_radius);
+ background: var(--button_outline_color);
+}
+
+.button_top {
+ display: absolute;
+ box-sizing: border-box;
+ border: none;
+ border-radius: var(--button_radius);
+ padding: 10px 15px;
+ background: var(--button_color);
+ color: var(--button_outline_color);
+ transform: translateY(-0.2em);
+ transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+ transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+ transform: translateY(0);
+}
+.Tilt-inner img{
+width: 100%;
+height: 100%;
+}
